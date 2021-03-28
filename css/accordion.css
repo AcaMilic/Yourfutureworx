@@ -1,0 +1,230 @@
+/* /FAQ */
+.box-accordion-main{
+    margin-top: 100px;
+    background: rgb(240, 240, 240);
+    color: #0F3540;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 18px;
+ }
+ 
+ button.accordion-main:after{
+   content: '\f056';
+   font-family: "fontawesome";
+   font-size: 24px;
+ }
+ button.accordion-main.is-open:after {
+   content: '\f055';
+ }
+ .accordion-content-main{
+     display: flex;
+     padding: 0 20px;
+     color: #0F3540;
+     max-height: 0;
+     overflow: hidden;
+     font-size: 1.2rem;
+     transition: max-height .8s ease-in-out;
+ }
+ .accordion-content-main-two{
+     padding: 0 20px;
+     border-bottom: 1px solid rgb(22, 77, 92);
+     color: #0F3540;
+     max-height: 0;
+     overflow: hidden;
+     font-size: 1.5rem;
+     transition: max-height 0.5s ease-in-out;
+ }
+
+ .accordion-content-main p{
+     font-size: 1.8rem;
+     letter-spacing: 1px;
+ }
+ .accordion-content-main li{
+     letter-spacing: 1px;
+     padding: 3px 0;
+
+ }
+ .thumbnail .accordion-main::after{
+     display: none;
+ 
+ }
+ .thumbnail .accordion-main{
+     text-align: center;
+ }
+ .thumbnail .accordion-main:hover{
+     background: none;
+     text-align: center;
+ }
+ .thumbnail .accordion-content-main{
+     padding: 0;
+ }
+ .accordion-content-main h3{
+     font-size: 2.2rem;
+ }
+ .thumbnail .btntwo {
+     margin-bottom: 0;
+ }
+ .pink-color-text{
+     color: #e75ba0;
+ }
+ .pink-color-text-bolded{
+     color: #e75ba0;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+ .lightblue-main{
+     font-size: 1.8rem;
+ }
+ button.accordion-main{
+     width: 100%;
+     text-align: left;
+     background: #fff;
+     color: #0F3540;
+     border: none;
+     outline: none;
+     padding: 15px 20px;
+     font-size: 24px;
+     cursor: pointer;
+     border-radius: 5px; 
+     transition: background-color 0.4s linear;
+ }
+ button.accordion-main:after{
+     content: '\f056';
+     font-family: "fontawesome";
+     font-size: 24px;
+     float: right;
+     color: #e75ba0;
+   }
+   button.accordion-main.is-open:after {
+     content: '\f055';
+     color: #e75ba0;
+   }
+   button.accordion-main:hover{
+       background-color: rgb(255, 247, 255);
+   }
+
+   .lista{
+       margin: 2rem 0;
+   }
+   .lista ul{
+       padding: 0;
+   }
+   
+   .lista-other ul{
+        padding-left: 1rem;
+    }
+
+    .text-lista p{
+        font-size: 1.2rem;
+    }
+   .bold{
+       font-weight: bold;
+   }
+ 
+   .worker-image{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: 2rem 0;
+   }
+   .worker-image img{
+       width: 50%;
+   }
+    .worker-image-cogwheel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .worker-image-lims{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .worker-image-cogwheel img{
+        width: 70%;
+    }
+    .worker-image-lims img{
+        margin-top: 6rem;
+        width: 100%;
+    }
+    .worker-image-truck img{
+        width: 100%;
+    }
+
+   @media all and (max-width: 991px){
+    .worker-image img{
+        width: 80%;
+    }
+    .worker-image-cogwheel img{
+        width: 100%;
+    }
+    .worker-image-lims img{
+        margin-top: 14rem;
+        width: 100%;
+    }
+
+    .lista ul li{
+        font-size: 1.2rem;
+    }
+
+    .lista-other ul li{
+        font-size: 1.2rem;
+    }
+    .text-lista p{
+        font-size: 1rem;
+    }
+   }
+
+   @media all and (max-width: 767px){
+    .worker-image img{
+        width: 100%;
+    }
+    .worker-image-cogwheel img{
+        margin-top: 4rem;
+        width: 70%;
+    }
+    .worker-image-truck img{
+        margin-top: 40px;
+        width: 220px;
+    }
+    .lista ul li{
+        font-size: 1rem;
+    }
+    .lista-other ul li{
+        font-size: 1rem;
+    }
+    
+   }
+
+   @media all and (max-width: 669px){
+
+    .worker-image-truck img{
+        margin-top: 40px;
+        width: 150px;
+
+   }
+}
+
+   @media all and (max-width: 575px){
+    .worker-image img{
+        width: 30%;
+    }
+    .worker-image-cogwheel img{
+        margin-top: 0;
+        width: 40%;
+    }
+    .worker-image-lims img{
+        margin-top: 0;
+        width: 50%;
+    }
+        .worker-image-truck{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+        .worker-image-truck img{
+        width: 100%;
+   }
+
+}
